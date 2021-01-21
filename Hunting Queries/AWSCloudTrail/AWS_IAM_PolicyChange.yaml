@@ -1,5 +1,5 @@
 id: e0a67cd7-b4e5-4468-aae0-26cb16a1bbd2
-name: Changes made to AWS IAM policy 
+name: Changes made to AWS IAM policy (Edited)
 description: |
   Identity and Access Management (IAM) securely manages access to AWS services and resources. 
   This query looks for when an API call is made to change an IAM, particularly those related to new policies being 
@@ -15,6 +15,7 @@ tactics:
 relevantTechniques:
   - T1078
   - T1484
+  - T1289
 query: |
 
   let timeframe = 7d;
