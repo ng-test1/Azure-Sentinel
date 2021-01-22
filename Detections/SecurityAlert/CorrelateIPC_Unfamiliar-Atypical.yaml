@@ -15,6 +15,7 @@ tactics:
   - InitialAccess
 relevantTechniques:
   - T1078
+  - T1201
 query: |
   let TimeFrame = ago(1d);
   let Alert1 = 
@@ -49,7 +50,7 @@ query: |
 entityMappings:
   - entityType: Account
     fieldMappings:
-      - identifier: FullName
+      - identifier: LastName
         columnName: AccountCustomEntity
   - entityType: IP
     fieldMappings:
