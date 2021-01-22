@@ -10,10 +10,10 @@ description: |
   S3 LogStash Config: https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Logstash/input-aws_s3-output-loganalytics.conf
   S3 KQL Parser: https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/AwsS3BucketAPILogsParser.txt'
 severity: Medium
-queryFrequency: 1h
-queryPeriod: 14d
+queryFrequency: 2h
+queryPeriod: 20d
 triggerOperator: gt
-triggerThreshold: 0
+triggerThreshold: 2
 tactics:
   - Exfiltration
 relevantTechniques:
