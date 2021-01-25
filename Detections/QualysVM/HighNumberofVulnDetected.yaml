@@ -1,14 +1,14 @@
 id: be52662c-3b23-435a-a6fa-f39bdfc849e6
 name: High Number of Urgent Vulnerabilities Detected
 description: |
-  'This Creates an incident when a host has a high number of Urgent, severity 5, vulnerabilities detected.'
-severity: Medium
+  'This Creates an incident when a host has a high number of Urgent, severity 5, vulnerabilities detected test3.'
+severity: High
 requiredDataConnectors:
   - connectorId: QualysVulnerabilityManagement
     dataTypes: 
       - QualysHostDetection_CL
-queryFrequency: 1h
-queryPeriod: 1h
+queryFrequency: 2h
+queryPeriod: 2h
 triggerOperator: gt
 triggerThreshold: 0
 tactics:
