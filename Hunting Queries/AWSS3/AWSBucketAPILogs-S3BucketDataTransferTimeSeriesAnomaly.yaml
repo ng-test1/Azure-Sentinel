@@ -1,7 +1,7 @@
 id: 0ef8dee1-eb94-44c8-b59b-2eb096a4b983
 name: S3 Bucket outbound Data transfer anomaly
 description: |
-  'Identifies when an anomalous spike occur in data transfer from an S3 bucket based on GetObject API call and the BytesTransferredOut field. 
+  'Identifies test3 when an anomalous spike occur in data transfer from an S3 bucket based on GetObject API call and the BytesTransferredOut field. 
   The query leverages KQL built-in anomaly detection algorithms to find large deviations from baseline patterns. 
   Sudden increases in execution frequency of sensitive actions should be further investigated for malicious activity.
   Manually change scorethreshold from 1.5 to 3 or higher to reduce the noise based on outliers flagged from the query criteria.
@@ -20,9 +20,9 @@ relevantTechniques:
   - T1020
 query: |
 
-  let starttime = 14d;
-  let endtime = 1d;
-  let timeframe = 1h;
+  let starttime = 21d;
+  let endtime = 3d;
+  let timeframe = 3h;
   let scorethreshold = 1.5;
   // Preparing the time series data aggregated on BytesTransferredOut column in the form of multi-value array so that it can be used with time series anomaly function.
   let TimeSeriesData=
