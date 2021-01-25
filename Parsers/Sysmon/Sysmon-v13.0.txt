@@ -3,7 +3,7 @@
 // Sysmon Version: 11.0, Binary Version : 9.20 , Schema Version: 4.30
 //
 // Sysmon Instructions:
-// If you want to print configuration schema definition of sysmon. Execute below command from command shell or powershell terminal
+// If you want to print configuration schema definition of sysmon. Execute below command from command shell or powershell terminal and test test test
 // Sysmon.exe -s
 //
 // You can further customize config XML definition and install sysmon with it via below command. 
