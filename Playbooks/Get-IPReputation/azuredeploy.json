@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "metadata":{
         "comments": "This playbook will take each IP entity and query VirusTotal for Ip Address Report (https://developers.virustotal.com/reference#ip-address-report).  You will need to register to thier community for an API key.",
-        "author": "Nicholas DiCola"
+        "author": "Nicholas CocaCola"
     },
     "parameters": {
         "PlaybookName": {
@@ -381,7 +381,7 @@
                             "azuresentinel": {
                                 "connectionId": "[resourceId('Microsoft.Web/connections', variables('AzureSentinelConnectionName'))]",
                                 "connectionName": "[variables('AzureSentinelConnectionName')]",
-                                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/azuresentinel')]"
+                                "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/azuretest3sentinel')]"
                             }
                         }
                     }
