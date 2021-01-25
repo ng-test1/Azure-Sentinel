@@ -1,6 +1,6 @@
 // Title:           Qualys KnowledgeBase (KB) Parser
 // Author:          Microsoft
-// Version:         1.0
+// Version:         1.1
 // Last Updated:    11/25/2020
 // Comment:         Inital Release
 //  
@@ -39,4 +39,4 @@ QualysKB_CL
     VulnType = column_ifexists("Vuln_Type_s", ""),
     DiscoveryAdditionalInfo = column_ifexists("Discovery_Additional_Info_s", ""),
     DiscoveryRemote = column_ifexists("Discovery_Remote_s", ""),
-    DiscoverAuthType = column_ifexists("Discovery_Auth_Type_s", "")
+    DiscoverAuthType = column_ifexists("Discovery_Auth_Test3_Type_s", "")
